@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Cool It Down</title>
+  <meta name="description" content="A kid-friendly storybook for cooling down hot feelings, one bite at a time.">
+  <meta name="theme-color" content="#fff6ea">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <button type="button" class="icon-btn" id="btn-back" aria-label="Back"><span aria-hidden="true">←</span><span class="icon-label" data-text="nav.back"></span></button>
+    <button type="button" class="icon-btn" id="btn-home" aria-label="Home"><span aria-hidden="true">🏠</span><span class="icon-label" data-text="nav.home"></span></button>
+    <span class="spacer"></span>
+    <button type="button" class="icon-btn" id="btn-sound" aria-pressed="false"><span aria-hidden="true" id="sound-icon">🔇</span></button>
+    <button type="button" class="icon-btn" id="btn-settings" aria-label="Settings"><span aria-hidden="true">⚙️</span></button>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <div id="live" class="sr-only" aria-live="polite"></div>
+  <div id="confetti" aria-hidden="true"></div>
+
+  <div id="settings" class="overlay" hidden>
+    <div class="panel" role="dialog" aria-modal="true" aria-labelledby="settings-title"></div>
+  </div>
+
+  <script src="content.js"></script>
+  <script src="foods.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
