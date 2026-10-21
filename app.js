@@ -242,8 +242,8 @@
           <h1 class="title-big">${C.appTitle}</h1>
           <p class="subtitle">${C.tagline}</p>
           <div class="btn-stack">
-            <button type="button" class="btn big" data-act="story">📖 ${C.home.story}</button>
             <button type="button" class="btn big cool" data-act="tool">🔥 ${C.home.tool}</button>
+            <button type="button" class="btn big" data-act="story">📖 ${C.home.story}</button>
           </div>`,
         mount(root) {
           $(root, '[data-act="story"]').addEventListener("click", () => go("story", { page: 0 }));
